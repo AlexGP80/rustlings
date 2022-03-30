@@ -25,7 +25,7 @@ use std::str::FromStr;
 
 // This is the custom error type that we will be using for the parser for
 // `Climate`.
-#[derive(Debug, PartialEq)]
+#[derive(Debug, PartialEq, Display, Error)]
 enum ParseClimateError {
     Empty,
     BadLen,
